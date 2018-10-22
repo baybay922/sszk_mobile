@@ -1,0 +1,47 @@
+.clearfix:after {
+  content: '';
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+  display: block;
+  clear: both;
+}
+a {
+  text-decoration: none;
+  out-line: none;
+  color: #000;
+}
+button {
+  border: none;
+}
+.mt30 {
+  margin-top: 0.4rem;
+}
+.mb20 {
+  margin-bottom: 0.26666666666666666rem;
+}
+.ml50 {
+  margin-left: 0.6666666666666666rem;
+}
+.loginbutton {
+  width: 5.066666666666666rem;
+  height: 1.0933333333333333rem;
+}
+.borad {
+  border-radius: 100px;
+}
+.talignc {
+  text-align: center;
+}
+.dn {
+  display: none;
+}
+.fl {
+  float: left;
+}
+.fr {
+  float: right;
+}
+.clear {
+  clear: both;
+}

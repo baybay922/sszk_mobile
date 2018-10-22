@@ -1,0 +1,94 @@
+@fn: ~`px2rem = function(px, base){return base?(px/base*10)+'rem':(px/75)+'rem'}`;
+
+.px2rem(@px, @base: 750) {
+  @rem: (@px / @base * 10) * 1rem;
+}
+.fontdpr(@font-size) {
+  font-size: @font-size;
+  [data-dpr="2"] &{
+    font-size: @font-size*2;
+  }
+  [data-dpr="3"] &{
+    font-size: @font-size*3;
+  }
+}
+
+.font(@font-size) {
+  .fontdpr(@font-size);
+}
+// todo 字体颜色
+@light-grey: #888888;
+@middle-grey: #666666;
+@dark-grey: #333333;
+@left-key-color: #49474a;
+@content-color-c0: #c0c0c0;
+@content-color-b6: #b6b6b6;
+@content-color-50: #505050;
+@content-color-11: #111111;
+@content-color-88: #888888;
+@content-color-3e: #3e3c47;
+@submit-color: #f9444e;
+@money-color: #f9444e;
+@date-tip-color: #49474a;
+@logo-color :#c5129a;
+// todo 字体大小
+@left-key-font-size: 28px;
+// todo 边框
+@border-color: #efefef;
+@slash-color: #e1e1e1;
+@border-color2: #ededed;
+
+// todo header统一高度
+@header-height: ~`px2rem(84)`;
+
+.clearfix:after {
+  content: '';
+  height: 0;
+  line-height: 0;
+  visibility: hidden;
+  display: block;
+  clear: both;
+}
+a {
+  text-decoration:none;
+  out-line: none;
+  color: #000;
+}
+button{
+  border: none;
+}
+// //common style
+// .common-margin-top{
+//   margin-top: ~`px2rem(162)`;
+// }
+.mt30{
+  margin-top: ~`px2rem(30)`;
+}
+.mb20{
+  margin-bottom: ~`px2rem(20)`;
+}
+.ml50{
+  margin-left: ~`px2rem(50)`;
+}
+.loginbutton {
+  width: ~`px2rem(380)`;
+  height: ~`px2rem(82)`;
+}
+.borad{
+  border-radius: 100px;
+}
+.talignc{
+  text-align: center;
+}
+.dn{
+  display: none;
+}
+.fl{
+  float: left;
+}
+.fr{
+  float: right;
+}
+.clear{
+  clear: both;
+}

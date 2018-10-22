@@ -1,0 +1,24 @@
+@import "../../src/less/functions";
+
+.swiper-square .mint-swipe-indicators {
+  position: absolute;
+  bottom: ~`px2rem(15)`;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+
+.swiper-square .mint-swipe-indicator {
+  width: ~`px2rem(12)`;
+  height: ~`px2rem(19)`;
+  display: inline-block;
+  background: url("../../src/images/shared/swipericon.png") 0 0 no-repeat!important;
+  background-size: 100% 100%!important;
+  margin: 0 ~`px2rem(3/0.55)`;
+  opacity: 1;
+}
+
+.swiper-square .mint-swipe-indicator.is-active {
+  background: url("../../src/images/shared/swipericon-select.png") 0 0 no-repeat!important;
+  background-size: 100% 100%!important;
+}
